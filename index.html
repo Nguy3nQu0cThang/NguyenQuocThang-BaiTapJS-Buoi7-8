@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quản lý Mảng Số Nguyên</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container mt-4">
+    <h2 class="text-center">Quản lý Mảng Số Nguyên</h2>
+    <div class="mb-3">
+      <input
+        type="number"
+        id="numberInput"
+        class="form-control"
+        placeholder="Nhập số nguyên"
+      />
+      <button class="btn btn-primary mt-2" id="numberAdd">Thêm số</button>
+    </div>
+    <p><strong>Mảng hiện tại:</strong> <span id="arrayDisplay">[]</span></p>
+    <div class="row">
+      <div class="col-md-6">
+        <button class="btn btn-secondary w-100 mb-2" id="numberSumPositive">
+          Tổng số dương
+        </button>
+        <button class="btn btn-secondary w-100 mb-2" id="numberCountPositive">
+          Đếm số dương
+        </button>
+        <button class="btn btn-secondary w-100 mb-2" id="numberFindMin">
+          Tìm số nhỏ nhất
+        </button>
+        <button class="btn btn-secondary w-100 mb-2" id="numberFindMinPositive">
+          Tìm số dương nhỏ nhất
+        </button>
+        <button class="btn btn-secondary w-100 mb-2" id="numberFindLastEven">
+          Tìm số chẵn cuối cùng
+        </button>
+      </div>
+      <div class="col-md-6">
+        <input type="number" id="index1" />
+        <input type="number" id="index2" />
+        <button class="btn btn-secondary w-100 mb-2" id="numberSwapElements">
+          Đổi chỗ 2 giá trị
+        </button>
+        <button class="btn btn-secondary w-100 mb-2" id="numberSortArray">
+          Sắp xếp tăng dần
+        </button>
+        <button
+          class="btn btn-secondary w-100 mb-2"
+          id="numberFindFirstPrime"
+        >
+          Tìm số nguyên tố đầu tiên
+        </button>
+        <button
+          class="btn btn-secondary w-100 mb-2"
+          id="numberIntInFloat"
+        >
+          Đếm số nguyên trong mảng thực
+        </button>
+        <button
+          class="btn btn-secondary w-100 mb-2"
+          id="numberComparePosNeg"
+        >
+          So sánh số dương và âm
+        </button>
+      </div>
+    </div>
+    <p><strong>Kết quả:</strong> <span id="result"></span></p>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
